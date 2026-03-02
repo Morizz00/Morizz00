@@ -12,7 +12,7 @@
 </pre>
 
 <h3>
-Architecting Systems • Designing Intelligence • Building Leverage
+Architecting Systems • Designing Intelligence • Building Infrastructure
 </h3>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
@@ -40,54 +40,12 @@ Architecting Systems • Designing Intelligence • Building Leverage
 ```ts
 interface Engineer {
   focus: "AI Systems + Backend Architecture";
-  primary_stack: ["Go", "Rust", "Python"];
   distributed_systems: true;
   infrastructure_oriented: true;
-  building: ["Mesmer.ai", "PREPHELP", "Langsome"];
+  concurrency_focused: true;
+  domain: "AI-native backend systems";
 }
-
-const currentState: Engineer = {
-  focus: "AI Systems + Backend Architecture",
-  primary_stack: ["Go", "Rust", "Python"],
-  distributed_systems: true,
-  infrastructure_oriented: true,
-  building: ["Mesmer.ai", "PREPHELP", "Langsome"]
-};
 ```
-
----
-
-# Active Systems
-
-## Mesmer.ai
-
-Voice-first AI system with contextual memory and dual interaction modes.
-
-* Retrieval-Augmented Generation architecture
-* Voice pipeline (Hotword → STT → LLM → TTS)
-* Google AI Studio / LLM integrations
-* Concurrency-focused backend design
-
----
-
-## PREPHELP
-
-Structured academic infrastructure.
-
-* PYQ aggregation
-* Analytics-driven performance tracking
-* Go backend + Python AI layer
-* Scalable deployment design
-
----
-
-## Langsome
-
-Multi-language code translation engine.
-
-* Cross-language AST reasoning
-* JVM + Systems + Scripting language support
-* Competitive programming oriented
 
 ---
 
@@ -113,19 +71,32 @@ Multi-language code translation engine.
 
 OpenJDK • CPython • Go Runtime
 
+---
+
 ## Databases
 
 <div align="center">
 <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis" />
 </div>
 
-Vector Retrieval: Pinecone • Weaviate • FAISS • RAG systems
+Vector Retrieval Systems
 
-## Messaging
+<div align="center">
+<img src="https://img.shields.io/badge/Pinecone-000000?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Weaviate-5440D8?style=for-the-badge" />
+<img src="https://img.shields.io/badge/FAISS-0080FF?style=for-the-badge" />
+<img src="https://img.shields.io/badge/RAG-FF6B6B?style=for-the-badge" />
+</div>
+
+---
+
+## Messaging & Streaming
 
 <div align="center">
 <img src="https://skillicons.dev/icons?i=kafka,rabbitmq" />
 </div>
+
+---
 
 ## Containerization & Orchestration
 
@@ -133,23 +104,43 @@ Vector Retrieval: Pinecone • Weaviate • FAISS • RAG systems
 <img src="https://skillicons.dev/icons?i=docker,kubernetes" />
 </div>
 
-## Cloud
+---
+
+## Cloud & Storage
 
 <div align="center">
 <img src="https://skillicons.dev/icons?i=aws,azure,gcp" />
 </div>
 
-Google Cloud Storage included.
+<div align="center">
+<img src="https://img.shields.io/badge/Google_Cloud_Storage-AECBFA?style=for-the-badge" />
+</div>
 
-## CI/CD
+---
+
+## CI/CD & Deployment
 
 <div align="center">
 <img src="https://skillicons.dev/icons?i=githubactions,gitlab" />
 </div>
 
-## Deployment
+<div align="center">
+<img src="https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge" />
+<img src="https://skillicons.dev/icons?i=vercel" />
+</div>
 
-Railway • Vercel
+---
+
+## AI / ML / Voice Infrastructure
+
+<div align="center">
+<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
+<img src="https://img.shields.io/badge/Google_AI_Studio-4285F4?style=for-the-badge&logo=google&logoColor=white" />
+<img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white" />
+<img src="https://img.shields.io/badge/Whisper-412991?style=for-the-badge" />
+</div>
+
+---
 
 ## Infrastructure
 
@@ -165,7 +156,7 @@ Railway • Vercel
 | ------------------- | --------------------------------- |
 | Backend APIs        | Go                                |
 | Systems Programming | Rust + C                          |
-| AI Layer            | Python                            |
+| AI Layer            | Python + TensorFlow               |
 | JVM                 | Java + Scala                      |
 | Scripting           | Ruby + Bash                       |
 | Frontend            | React + TypeScript + Next.js      |
@@ -178,6 +169,7 @@ Railway • Vercel
 | Cloud               | AWS + Azure + GCP + GCS           |
 | CI/CD               | GitHub Actions + GitLab CI        |
 | Deployment          | Railway + Vercel                  |
+| AI Integrations     | Gemini + OpenAI + Whisper         |
 | OS                  | Linux                             |
 
 ---
