@@ -24,12 +24,18 @@ Architecting Systems • Designing Intelligence • Building Infrastructure
 ## Profile Metrics
 
 <div align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=Morizz00&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7" />
+</div>
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Morizz00&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=1800" />
+<br>
+
+<div align="center">
+
+<img height="180em" src="https://github-readme-stats-fast.vercel.app/api?username=Morizz00&show_icons=true&theme=tokyonight&hide_border=true" />
 
 <img height="180em" src="https://github-readme-streak-stats-eight.vercel.app?user=Morizz00&theme=tokyonight&hide_border=true" />
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Morizz00&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=1800" />
+<img height="180em" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Morizz00&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
 
 </div>
 
