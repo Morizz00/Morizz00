@@ -163,6 +163,4 @@ Deployment: Railway • Vercel
 
 Design AI-native infrastructure that is scalable, autonomous, and resilient.
 
----
 
-Replace `YOUR_USERNAME` with your GitHub handle for live metrics rendering.
