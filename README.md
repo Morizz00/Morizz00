@@ -1,43 +1,58 @@
-# MOID.EXE
+<!-- MOID.EXE PROFILE README -->
 
-### Architecting Systems • Designing Intelligence • Building Leverage
+<div align="center">
 
----
-
-```text
-███╗   ███╗ ██████╗ ██╗██████╗
+<pre>
+███╗   ███╗ ██████╗ ██╗██████╗ 
 ████╗ ████║██╔═══██╗██║██╔══██╗
 ██╔████╔██║██║   ██║██║██║  ██║
 ██║╚██╔╝██║██║   ██║██║██║  ██║
 ██║ ╚═╝ ██║╚██████╔╝██║██████╔╝
-╚═╝     ╚═╝ ╚═════╝ ╚═╝╚═════╝
-```
+╚═╝     ╚═╝ ╚═════╝ ╚═╝╚═════╝ 
+</pre>
+
+<h3>
+Architecting Systems • Designing Intelligence • Building Leverage
+</h3>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+</div>
 
 ---
 
 ## Profile Metrics
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight&hide_border=true" height="165" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=tokyonight&hide_border=true" height="165" />
-</p>
+<div align="center">
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight&hide_border=true" height="165" />
-</p>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight&hide_border=true" />
+
+<img height="180em" src="https://streak-stats.demolab.com?user=YOUR_USERNAME&theme=tokyonight&hide_border=true" />
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight&hide_border=true" />
+
+</div>
 
 ---
 
 ## Systems Overview
 
 ```ts
-type Engineer = {
+interface Engineer {
+  focus: "AI Systems + Backend Architecture";
+  primary_stack: ["Go", "Rust", "Python"];
+  distributed_systems: true;
+  infrastructure_oriented: true;
+  building: ["Mesmer.ai", "PREPHELP", "Langsome"];
+}
+
+const currentState: Engineer = {
   focus: "AI Systems + Backend Architecture",
   primary_stack: ["Go", "Rust", "Python"],
   distributed_systems: true,
   infrastructure_oriented: true,
   building: ["Mesmer.ai", "PREPHELP", "Langsome"]
-}
+};
 ```
 
 ---
@@ -57,7 +72,7 @@ Voice-first AI system with contextual memory and dual interaction modes.
 
 ## PREPHELP
 
-Structured academic infrastructure for Osmania University students.
+Structured academic infrastructure.
 
 * PYQ aggregation
 * Analytics-driven performance tracking
@@ -80,72 +95,103 @@ Multi-language code translation engine.
 
 ## Languages
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=go,rust,python,java,scala,ruby,c,js,ts,dart,bash" />
-</p>
+<div align="center">
+<img src="https://skillicons.dev/icons?i=go,rust,python,java,scala,ruby,c,js,ts,dart,bash" />
+</div>
 
-## Frontend & Runtime
+## Frontend
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,bun" />
-</p>
+<div align="center">
+<img src="https://skillicons.dev/icons?i=react,nextjs" />
+</div>
+
+## Runtimes
+
+<div align="center">
+<img src="https://skillicons.dev/icons?i=nodejs,bun,java,go,python" />
+</div>
+
+OpenJDK • CPython • Go Runtime
 
 ## Databases
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis" />
-</p>
+<div align="center">
+<img src="https://skillicons.dev/icons?i=postgres,mongodb,redis" />
+</div>
 
-Vector Databases: Pinecone • Weaviate • FAISS-style architectures
+Vector Retrieval: Pinecone • Weaviate • FAISS • RAG systems
 
-## Messaging & Streaming
+## Messaging
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=kafka,rabbitmq" />
-</p>
+<div align="center">
+<img src="https://skillicons.dev/icons?i=kafka,rabbitmq" />
+</div>
 
-## DevOps & Cloud
+## Containerization & Orchestration
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,azure,gcp,githubactions,gitlab,linux" />
-</p>
+<div align="center">
+<img src="https://skillicons.dev/icons?i=docker,kubernetes" />
+</div>
 
-Deployment: Railway • Vercel
+## Cloud
+
+<div align="center">
+<img src="https://skillicons.dev/icons?i=aws,azure,gcp" />
+</div>
+
+Google Cloud Storage included.
+
+## CI/CD
+
+<div align="center">
+<img src="https://skillicons.dev/icons?i=githubactions,gitlab" />
+</div>
+
+## Deployment
+
+Railway • Vercel
+
+## Infrastructure
+
+<div align="center">
+<img src="https://skillicons.dev/icons?i=linux,git" />
+</div>
 
 ---
 
 # Architecture Blueprint
 
-| Layer                 | Technologies                 |
-| --------------------- | ---------------------------- |
-| Backend APIs          | Go                           |
-| Systems Programming   | Rust + C                     |
-| AI / ML Layer         | Python                       |
-| JVM Ecosystem         | Java + Scala                 |
-| Scripting             | Ruby + Bash                  |
-| Frontend              | React + TypeScript + Next.js |
-| JS Runtime            | Node.js + Bun                |
-| Databases             | PostgreSQL + MongoDB + Redis |
-| Vector Retrieval      | RAG + Embedding Pipelines    |
-| Messaging             | Kafka + RabbitMQ             |
-| Containerization      | Docker                       |
-| Orchestration         | Kubernetes                   |
-| Cloud                 | AWS + Azure + GCP            |
-| CI/CD                 | GitHub Actions + GitLab CI   |
-| Deployment Platforms  | Railway + Vercel             |
-| Operating Environment | Linux                        |
+| Layer               | Technologies                      |
+| ------------------- | --------------------------------- |
+| Backend APIs        | Go                                |
+| Systems Programming | Rust + C                          |
+| AI Layer            | Python                            |
+| JVM                 | Java + Scala                      |
+| Scripting           | Ruby + Bash                       |
+| Frontend            | React + TypeScript + Next.js      |
+| JS Runtime          | Node.js + Bun                     |
+| Databases           | PostgreSQL + MongoDB + Redis      |
+| Vector Retrieval    | Pinecone + Weaviate + FAISS + RAG |
+| Messaging           | Kafka + RabbitMQ                  |
+| Containers          | Docker                            |
+| Orchestration       | Kubernetes                        |
+| Cloud               | AWS + Azure + GCP + GCS           |
+| CI/CD               | GitHub Actions + GitLab CI        |
+| Deployment          | Railway + Vercel                  |
+| OS                  | Linux                             |
 
 ---
 
 # Contribution Graph
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=YOUR_USERNAME&theme=tokyonight" />
-</p>
+<div align="center">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=YOUR_USERNAME&theme=tokyonight" />
+</div>
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=YOUR_USERNAME&theme=tokyonight&utcOffset=5" />
-</p>
+<div align="center">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=YOUR_USERNAME&theme=tokyonight&utcOffset=5" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=YOUR_USERNAME&theme=tokyonight" />
+</div>
 
 ---
 
@@ -159,8 +205,10 @@ Deployment: Railway • Vercel
 
 ---
 
-# Long-Term Direction
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
+</div>
 
-Design AI-native infrastructure that is scalable, autonomous, and resilient.
-
-
+<div align="center">
+<img src="https://komarev.com/ghpvc/?username=YOUR_USERNAME&label=Profile%20Views&color=58a6ff&style=flat-square" />
+</div>
