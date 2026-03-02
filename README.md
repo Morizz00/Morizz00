@@ -31,8 +31,6 @@ Architecting Systems • Designing Intelligence • Building Infrastructure
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats-fast.vercel.app/api?username=Morizz00&show_icons=true&theme=tokyonight&hide_border=true" />
-
 <img height="180em" src="https://github-readme-streak-stats-eight.vercel.app?user=Morizz00&theme=tokyonight&hide_border=true" />
 
 <img height="180em" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Morizz00&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
