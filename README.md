@@ -37,6 +37,27 @@ Architecting Systems • Designing Intelligence • Building Infrastructure
 
 </div>
 
+<br>
+
+<div align="center">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Morizz00&theme=tokyonight" />
+</div>
+
+<div align="center">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Morizz00&theme=tokyonight&utcOffset=5" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Morizz00&theme=tokyonight" />
+</div>
+
+<br>
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Morizz00/Morizz00/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Morizz00/Morizz00/output/github-contribution-grid-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/Morizz00/Morizz00/output/github-contribution-grid-snake-dark.svg" />
+</picture>
+</div>
+
 ---
 
 ## Systems Overview
@@ -231,19 +252,6 @@ interface Engineer {
 | Deployment          | Railway + Vercel                            |
 | AI Integrations     | Gemini + OpenAI + Whisper                   |
 | OS                  | Linux                                       |
-
----
-
-# Contribution Graph
-
-<div align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Morizz00&theme=tokyonight" />
-</div>
-
-<div align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Morizz00&theme=tokyonight&utcOffset=5" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Morizz00&theme=tokyonight" />
-</div>
 
 ---
 
