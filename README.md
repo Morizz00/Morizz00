@@ -25,11 +25,11 @@ Architecting Systems • Designing Intelligence • Building Leverage
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight&hide_border=true" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Morizz00&show_icons=true&theme=tokyonight&hide_border=true" />
 
-<img height="180em" src="https://streak-stats.demolab.com?user=YOUR_USERNAME&theme=tokyonight&hide_border=true" />
+<img height="180em" src="https://streak-stats.demolab.com?user=Morizz00&theme=tokyonight&hide_border=true" />
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight&hide_border=true" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Morizz00&layout=compact&theme=tokyonight&hide_border=true" />
 
 </div>
 
@@ -185,12 +185,12 @@ Railway • Vercel
 # Contribution Graph
 
 <div align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=YOUR_USERNAME&theme=tokyonight" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Morizz00&theme=tokyonight" />
 </div>
 
 <div align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=YOUR_USERNAME&theme=tokyonight&utcOffset=5" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=YOUR_USERNAME&theme=tokyonight" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Morizz00&theme=tokyonight&utcOffset=5" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Morizz00&theme=tokyonight" />
 </div>
 
 ---
@@ -211,4 +211,4 @@ Railway • Vercel
 
 <div align="center">
 <img src="https://komarev.com/ghpvc/?username=Morizz00&label=Profile%20Views&color=58a6ff&style=flat-square" />
-</div>-------why 
+</div>
