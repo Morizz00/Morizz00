@@ -194,9 +194,6 @@ interface Engineer {
 <img src="https://skillicons.dev/icons?i=azure,gcp&theme=dark" />
 </div>
 
-<div align="center">
-<img src="https://img.shields.io/badge/Google_Cloud_Storage-AECBFA?style=for-the-badge&logo=google-cloud&logoColor=black" />
-</div>
 
 ---
 
