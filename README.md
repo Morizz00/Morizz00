@@ -168,14 +168,11 @@ interface Engineer {
 </div>
 
 <div align="center">
-<img src="https://skillicons.dev/icons?i=terraform,ansible,prometheus,grafana,jenkins,gitlab&theme=dark" />
+<img src="https://skillicons.dev/icons?i=terraform,prometheus,grafana,gitlab&theme=dark" />
 </div>
 
 <div align="center">
 <img src="https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white" />
-<img src="https://img.shields.io/badge/ArgoCD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white" />
-<img src="https://img.shields.io/badge/Istio-466BB0?style=for-the-badge&logo=istio&logoColor=white" />
-<img src="https://img.shields.io/badge/Vault-FFEC6E?style=for-the-badge&logo=vault&logoColor=black" />
 <img src="https://img.shields.io/badge/Consul-F24C53?style=for-the-badge&logo=consul&logoColor=white" />
 <img src="https://img.shields.io/badge/Datadog-632CA6?style=for-the-badge&logo=datadog&logoColor=white" />
 </div>
