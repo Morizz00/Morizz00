@@ -23,9 +23,6 @@ Architecting Systems • Designing Intelligence • Building Infrastructure
 
 ## Profile Metrics
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Morizz00&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7" />
-</div>
 
 
 <br>
