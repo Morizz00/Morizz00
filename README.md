@@ -261,11 +261,11 @@ interface Engineer {
 </div>
 
 <div align="center">
-```
+
 ╔════════════════════════════════════════════╗
 ║       SYSTEMS ONLINE • BUILDING            ║
 ╚════════════════════════════════════════════╝
-```
+
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&lines=Architecting+AI-native+systems...;Pushing+to+production...;Scaling+distributed+infrastructure...;Building+the+next+layer..." alt="Typing SVG" />
 
