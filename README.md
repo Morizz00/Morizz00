@@ -25,7 +25,7 @@ Architecting Systems • Designing Intelligence • Building Infrastructure
 
 <div align="center">
 
-[![GitHub Streak](https://nirzak-streak-stats.vercel.app/?user=Morizz00&theme=tokyonight-duo&hide_border=true&fire=58A6FF&ring=58A6FF&currStreakLabel=58A6FF)](https://git.io/streak-stats)
+![](https://github-readme-streak-stats.herokuapp.com/?user=Morizz00&theme=tokyonight&hide_border=true)
 
 </div>
 
@@ -262,9 +262,9 @@ interface Engineer {
 
 <div align="center">
 ```
-╔══════════════════════════════════════════╗
-║         SYSTEMS ONLINE • BUILDING        ║
-╚══════════════════════════════════════════╝
+╔════════════════════════════════════════════╗
+║       SYSTEMS ONLINE • BUILDING            ║
+╚════════════════════════════════════════════╝
 ```
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&lines=Architecting+AI-native+systems...;Pushing+to+production...;Scaling+distributed+infrastructure...;Building+the+next+layer..." alt="Typing SVG" />
