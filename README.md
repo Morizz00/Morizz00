@@ -23,15 +23,13 @@ Architecting Systems • Designing Intelligence • Building Infrastructure
 
 ## Profile Metrics
 
-
-
-<br>
-
 <div align="center">
 
-<img height="180em" src="https://github-readme-streak-stats-eight.vercel.app?user=Morizz00&theme=tokyonight&hide_border=true" />
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Morizz00&theme=tokyonight&hide_border=true)
 
-<img height="180em" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Morizz00&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
+![Moid's GitHub stats](https://github-readme-stats.vercel.app/api?username=Morizz00&show_icons=true&theme=tokyonight&hide_border=true)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Morizz00&layout=compact&theme=tokyonight&hide_border=true)
 
 </div>
 
@@ -59,7 +57,6 @@ Architecting Systems • Designing Intelligence • Building Infrastructure
 ---
 
 ## Systems Overview
-
 ```ts
 interface Engineer {
   focus: "AI Systems + Backend Architecture";
@@ -262,7 +259,6 @@ interface Engineer {
 </div>
 
 <div align="center">
-
 ```
 ╔══════════════════════════════════════════╗
 ║         SYSTEMS ONLINE • BUILDING        ║
