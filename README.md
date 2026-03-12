@@ -25,12 +25,14 @@ Architecting Systems • Designing Intelligence • Building Infrastructure
 
 <div align="center">
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Morizz00&theme=tokyonight&hide_border=true)
+[![GitHub Streak](https://nirzak-streak-stats.vercel.app/?user=Morizz00&theme=tokyonight-duo&hide_border=true&fire=58A6FF&ring=58A6FF&currStreakLabel=58A6FF)](https://git.io/streak-stats)
 
-![Moid's GitHub stats](https://github-readme-stats.vercel.app/api?username=Morizz00&show_icons=true&theme=tokyonight&hide_border=true)
+</div>
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Morizz00&layout=compact&theme=tokyonight&hide_border=true)
+<br>
 
+<div align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Morizz00&theme=tokyo-night&hide_border=true&bg_color=1a1b27&color=58a6ff&line=58a6ff&point=FFFFFF&area=true" />
 </div>
 
 <br>
