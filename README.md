@@ -64,6 +64,7 @@ const moid = {
 
 ### 📚 PrepHelp
 **AI Study Platform — Osmania University**
+https://www.prephelp.in/
 
 The origin story behind RoundtableCI. Discovered the benchmark problem while building AI tools for students.
 
