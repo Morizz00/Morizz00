@@ -56,13 +56,6 @@ const moid = {
 ### 🔁 RoundtableCI
 **Neutral AI Orchestration Platform**
 
-Routes every query to the best-performing model based on real usage data — not marketing claims.
-
-- **n+2 judge-model architecture**: top-ranked model acts as a blind independent judge
-- LangChain + PostgreSQL/pgvector backend
-- Multi-model evaluation pipeline
-- Built for developers who want reliable AI, not hype
-
 [![Status](https://img.shields.io/badge/Status-In%20Development-58a6ff?style=flat-square)](https://github.com/Morizz00)
 [![YC](https://img.shields.io/badge/YC%20S26-Applicant-FF6600?style=flat-square&logo=ycombinator)](https://ycombinator.com)
 
