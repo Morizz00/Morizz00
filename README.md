@@ -2,7 +2,16 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1b27,100:24283d&height=140&section=header&text=MOID.EXE&fontSize=52&fontColor=58a6ff&fontAlignY=60&animation=twinkling&desc=Backend%20Architect%20%7C%20AI%20Systems%20Engineer%20%7C%20Startup%20Founder&descSize=14&descAlignY=80&descColor=8b949e"/>
+<pre>
+███╗   ███╗ ██████╗ ██╗██████╗ 
+████╗ ████║██╔═══██╗██║██╔══██╗
+██╔████╔██║██║   ██║██║██║  ██║
+██║╚██╔╝██║██║   ██║██║██║  ██║
+██║ ╚═╝ ██║╚██████╔╝██║██████╔╝
+╚═╝     ╚═╝ ╚═════╝ ╚═╝╚═════╝ 
+</pre>
+
+<h3>Backend Architect &nbsp;•&nbsp; AI Systems Engineer &nbsp;•&nbsp; Startup Founder</h3>
 
 </div>
 
