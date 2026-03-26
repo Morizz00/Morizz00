@@ -1,52 +1,107 @@
-<!-- MOID.EXE PROFILE README -->
+<!-- MOID.EXE — PROFILE README -->
 
 <div align="center">
 
-<pre>
-███╗   ███╗ ██████╗ ██╗██████╗ 
-████╗ ████║██╔═══██╗██║██╔══██╗
-██╔████╔██║██║   ██║██║██║  ██║
-██║╚██╔╝██║██║   ██║██║██║  ██║
-██║ ╚═╝ ██║╚██████╔╝██║██████╔╝
-╚═╝     ╚═╝ ╚═════╝ ╚═╝╚═════╝ 
-</pre>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1b27,100:24283d&height=140&section=header&text=MOID.EXE&fontSize=52&fontColor=58a6ff&fontAlignY=60&animation=twinkling&desc=Backend%20Architect%20%7C%20AI%20Systems%20Engineer%20%7C%20Startup%20Founder&descSize=14&descAlignY=80&descColor=8b949e"/>
 
-<h3>
-Architecting Systems • Designing Intelligence • Building Infrastructure
-</h3>
+</div>
+
+<div align="center">
+
+```
+ ░▒▓█  AI SYSTEMS + BACKEND ARCHITECTURE + DISTRIBUTED INFRA  █▓▒░
+```
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&duration=2500&pause=600&color=58A6FF&center=true&vCenter=true&width=680&lines=Building+AI-native+infrastructure+from+scratch...;CEO+%2F+CTO+%40+RoundtableCI;Routing+intelligence+%E2%80%94+not+just+requests.;PostgreSQL+%2B+pgvector+%2B+LangChain+%2B+Go+%2B+Rust;Distributed+systems.+Bleeding+edge.+Production+grade." alt="Typing SVG" />
+
+</div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-</div>
+---
+
+## `whoami`
+
+```ts
+const moid = {
+  role        : ["CEO", "CTO", "Backend Engineer"],
+  company     : "RoundtableCI",
+  building    : "Neutral AI orchestration — routes queries to the best model based on real performance data",
+  stack       : ["Go", "Rust", "Python", "TypeScript", "PostgreSQL", "pgvector", "LangChain", "Kafka"],
+  domains     : ["AI Systems", "Backend Architecture", "Distributed Infra", "RAG Pipelines", "Vector DBs"],
+  currently   : "Y Combinator S26 applicant 🚀",
+  based_in    : "Hyderabad, India",
+  education   : "B.E. Computer Science",
+  philosophy  : "Ship fast. Build deep. Don't fake benchmarks.",
+};
+```
 
 ---
 
-## Profile Metrics
+## 🚀 What I'm Building
+
+<table>
+<tr>
+<td width="50%">
+
+### 🔁 RoundtableCI
+**Neutral AI Orchestration Platform**
+
+Routes every query to the best-performing model based on real usage data — not marketing claims.
+
+- **n+2 judge-model architecture**: top-ranked model acts as a blind independent judge
+- LangChain + PostgreSQL/pgvector backend
+- Multi-model evaluation pipeline
+- Built for developers who want reliable AI, not hype
+
+[![Status](https://img.shields.io/badge/Status-In%20Development-58a6ff?style=flat-square)](https://github.com/Morizz00)
+[![YC](https://img.shields.io/badge/YC%20S26-Applicant-FF6600?style=flat-square&logo=ycombinator)](https://ycombinator.com)
+
+</td>
+<td width="50%">
+
+### 📚 PrepHelp
+**AI Study Platform — Osmania University**
+
+The origin story behind RoundtableCI. Discovered the benchmark problem while building AI tools for students.
+
+- Syllabus PDF → structured JSON → pgvector ingestion
+- RAG-powered retrieval for exam prep
+- Custom `ragify/` pipeline with dry-run validation
+- Built for real students, real syllabus, real results
+
+[![Status](https://img.shields.io/badge/Status-Active-2ea043?style=flat-square)](https://github.com/Morizz00)
+
+</td>
+</tr>
+</table>
+
+---
+
+## 📊 Profile Metrics
 
 <div align="center">
 
-![](https://github-readme-streak-stats.herokuapp.com/?user=Morizz00&theme=tokyonight&hide_border=true)
+![](https://github-readme-streak-stats.herokuapp.com/?user=Morizz00&theme=tokyonight&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff)
 
 </div>
-
-<br>
 
 <div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Morizz00&theme=tokyo-night&hide_border=true&bg_color=1a1b27&color=58a6ff&line=58a6ff&point=FFFFFF&area=true" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Morizz00&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=58a6ff&line=58a6ff&point=FFFFFF&area=true&area_color=58a6ff" />
 </div>
-
-<br>
 
 <div align="center">
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Morizz00&theme=tokyonight" />
 </div>
 
 <div align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Morizz00&theme=tokyonight&utcOffset=5" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Morizz00&theme=tokyonight&utcOffset=5.5" />
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Morizz00&theme=tokyonight" />
 </div>
 
-<br>
+---
+
+## 🐍 Contribution Grid
 
 <div align="center">
 <picture>
@@ -58,22 +113,9 @@ Architecting Systems • Designing Intelligence • Building Infrastructure
 
 ---
 
-## Systems Overview
-```ts
-interface Engineer {
-  focus: "AI Systems + Backend Architecture";
-  distributed_systems: true;
-  infrastructure_oriented: true;
-  concurrency_focused: true;
-  domain: "AI-native backend systems";
-}
-```
+## ⚙️ Core Stack
 
----
-
-# Core Stack
-
-## Languages
+### Languages
 
 <div align="center">
 
@@ -88,64 +130,54 @@ interface Engineer {
 <img src="https://skillicons.dev/icons?i=go,rust,scala,ruby,c,dart,bash&theme=dark" />
 </div>
 
-<br>
-
 <div align="center">
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=14&duration=2000&pause=500&color=58A6FF&center=true&vCenter=true&width=600&height=40&lines=Go+%7C+Rust+%7C+Python+%7C+Java+%7C+Scala+%7C+Ruby+%7C+C+%7C+JS+%7C+TS+%7C+Dart+%7C+Bash" alt="Languages" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&duration=2000&pause=500&color=58A6FF&center=true&vCenter=true&width=640&height=36&lines=Go+%7C+Rust+%7C+Python+%7C+TypeScript+%7C+Java+%7C+Scala+%7C+C+%7C+Bash+%7C+Ruby+%7C+Dart" alt="Languages" />
 </div>
 
 ---
 
-## Frontend
+### Frontend
 
 <div align="center">
-
 <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React" width="65" height="65" />
-
-</div>
-
-<div align="center">
-<img src="https://skillicons.dev/icons?i=nextjs,ts&theme=dark" />
+<img src="https://skillicons.dev/icons?i=nextjs,ts,tailwind&theme=dark" />
 </div>
 
 ---
 
-## Runtimes
+### Runtimes
 
 <div align="center">
 <img src="https://skillicons.dev/icons?i=nodejs,bun,java,go,python&theme=dark" />
-</div>
-
-<div align="center">
-<sub>OpenJDK • CPython • Go Runtime</sub>
+<br>
+<sub><code>OpenJDK • CPython • Go Runtime • Bun</code></sub>
 </div>
 
 ---
 
-## Databases
+### Databases
 
 <div align="center">
-
-<img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL/SQL" width="65" height="65" />
-
-</div>
-
-<div align="center">
+<img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL" width="65" height="65" />
 <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis&theme=dark" />
 </div>
 
-### Vector Retrieval Systems
+#### Vector & Retrieval Systems
 
 <div align="center">
-<img src="https://img.shields.io/badge/Pinecone-000000?style=for-the-badge&logo=pinecone&logoColor=white" />
-<img src="https://img.shields.io/badge/Weaviate-5440D8?style=for-the-badge" />
-<img src="https://img.shields.io/badge/FAISS-0080FF?style=for-the-badge" />
-<img src="https://img.shields.io/badge/RAG-FF6B6B?style=for-the-badge" />
+
+![pgvector](https://img.shields.io/badge/pgvector-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=for-the-badge)
+![Weaviate](https://img.shields.io/badge/Weaviate-5440D8?style=for-the-badge)
+![FAISS](https://img.shields.io/badge/FAISS-0080FF?style=for-the-badge)
+![RAG](https://img.shields.io/badge/RAG_Pipelines-FF6B6B?style=for-the-badge)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge)
+
 </div>
 
 ---
 
-## Messaging & Streaming
+### Messaging & Streaming
 
 <div align="center">
 <img src="https://skillicons.dev/icons?i=kafka,rabbitmq&theme=dark" />
@@ -153,15 +185,13 @@ interface Engineer {
 
 ---
 
-## DevOps & Infrastructure
+### DevOps & Infrastructure
 
 <div align="center">
-
 <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" />
 <img src="https://techstack-generator.vercel.app/kubernetes-icon.svg" alt="Kubernetes" width="65" height="65" />
 <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="Nginx" width="65" height="65" />
 <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="65" height="65" />
-
 </div>
 
 <div align="center">
@@ -169,101 +199,93 @@ interface Engineer {
 </div>
 
 <div align="center">
-<img src="https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white" />
-<img src="https://img.shields.io/badge/Consul-F24C53?style=for-the-badge&logo=consul&logoColor=white" />
-<img src="https://img.shields.io/badge/Datadog-632CA6?style=for-the-badge&logo=datadog&logoColor=white" />
+
+![Helm](https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white)
+![Consul](https://img.shields.io/badge/Consul-F24C53?style=for-the-badge&logo=consul&logoColor=white)
+![Datadog](https://img.shields.io/badge/Datadog-632CA6?style=for-the-badge&logo=datadog&logoColor=white)
+![Vault](https://img.shields.io/badge/Vault-FFEC6E?style=for-the-badge&logo=vault&logoColor=black)
+![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white)
+
 </div>
 
 ---
 
-## Cloud & Storage
+### Cloud
 
 <div align="center">
-
 <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="AWS" width="65" height="65" />
-
-</div>
-
-<div align="center">
 <img src="https://skillicons.dev/icons?i=azure,gcp&theme=dark" />
 </div>
 
-
 ---
 
-## CI/CD & Deployment
-
-<div align="center">
-<img src="https://skillicons.dev/icons?i=githubactions,gitlab,vercel,linux,git&theme=dark" />
-</div>
-
-<div align="center">
-<img src="https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white" />
-</div>
-
----
-
-## AI / ML / Voice Infrastructure
+### AI / ML Infrastructure
 
 <div align="center">
 <img src="https://skillicons.dev/icons?i=tensorflow,pytorch&theme=dark" />
 </div>
 
 <div align="center">
-<img src="https://img.shields.io/badge/Google_AI_Studio-4285F4?style=for-the-badge&logo=google&logoColor=white" />
-<img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white" />
-<img src="https://img.shields.io/badge/Whisper-412991?style=for-the-badge&logo=openai&logoColor=white" />
+
+![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Anthropic](https://img.shields.io/badge/Anthropic_Claude-D97757?style=for-the-badge)
+![Gemini](https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Whisper](https://img.shields.io/badge/Whisper-412991?style=for-the-badge&logo=openai&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21F?style=for-the-badge&logo=huggingface&logoColor=black)
+
 </div>
 
 ---
 
-# Architecture Blueprint
+## 🗺️ Architecture Blueprint
 
-| Layer               | Technologies                                |
-| ------------------- | ------------------------------------------- |
-| Backend APIs        | Go                                          |
-| Systems Programming | Rust + C                                    |
-| AI Layer            | Python + TensorFlow                         |
-| JVM                 | Java + Scala                                |
-| Scripting           | Ruby + Bash                                 |
-| Frontend            | React + TypeScript + Next.js                |
-| JS Runtime          | Node.js + Bun                               |
-| Databases           | PostgreSQL + MongoDB + Redis                |
-| Vector Retrieval    | Pinecone + Weaviate + FAISS + RAG           |
-| Messaging           | Kafka + RabbitMQ                            |
-| Containers          | Docker                                      |
-| Orchestration       | Kubernetes + Helm + ArgoCD                  |
-| Service Mesh        | Istio + Consul                              |
-| IaC                 | Terraform + Ansible                         |
-| Observability       | Prometheus + Grafana + Datadog              |
-| Secrets             | Vault                                       |
-| Proxy               | Nginx                                       |
-| Cloud               | AWS + Azure + GCP + GCS                     |
-| CI/CD               | GitHub Actions + GitLab CI + Jenkins        |
-| Deployment          | Railway + Vercel                            |
-| AI Integrations     | Gemini + OpenAI + Whisper                   |
-| OS                  | Linux                                       |
+| Layer | Technologies |
+|---|---|
+| **Backend APIs** | Go |
+| **Systems Programming** | Rust + C |
+| **AI Orchestration** | Python + LangChain + pgvector |
+| **ML / Training** | Python + TensorFlow + PyTorch |
+| **JVM** | Java + Scala |
+| **Scripting** | Ruby + Bash |
+| **Frontend** | React + TypeScript + Next.js + Tailwind |
+| **JS Runtime** | Node.js + Bun |
+| **Databases** | PostgreSQL + MongoDB + Redis |
+| **Vector Retrieval** | pgvector + Pinecone + Weaviate + FAISS |
+| **Messaging** | Kafka + RabbitMQ |
+| **Containers** | Docker |
+| **Orchestration** | Kubernetes + Helm + ArgoCD |
+| **Service Mesh** | Istio + Consul |
+| **IaC** | Terraform + Ansible |
+| **Observability** | Prometheus + Grafana + Datadog |
+| **Secrets** | Vault |
+| **Proxy / Gateway** | Nginx |
+| **Cloud** | AWS + Azure + GCP |
+| **CI/CD** | GitHub Actions + GitLab CI + Jenkins |
+| **Deployment** | Railway + Vercel |
+| **AI Integrations** | Claude + GPT-4o + Gemini + Whisper |
+| **OS** | Linux |
 
 ---
 
-# Focus Areas
+## 🎯 Focus Areas
 
-* Production-grade RAG systems
-* High-concurrency backend design
-* Voice AI infrastructure
-* Distributed systems architecture
-* System design depth
+```
+  ▸  Production-grade RAG systems & vector retrieval pipelines
+  ▸  High-concurrency backend design (Go + Rust)
+  ▸  AI orchestration & multi-model evaluation infrastructure
+  ▸  Distributed systems architecture at startup scale
+  ▸  Voice AI infrastructure & real-time audio processing
+  ▸  LLM-native backend systems (not wrappers — actual infra)
+```
 
 ---
 
 <div align="center">
+
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-</div>
 
-<div align="center">
-
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&lines=Architecting+AI-native+systems...;Pushing+to+production...;Scaling+distributed+infrastructure...;Building+the+next+layer..." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=540&lines=Architecting+AI-native+systems...;Pushing+to+production...;Scaling+distributed+infrastructure...;Building+the+next+layer...;YC+S26+%F0%9F%9A%80" alt="Typing SVG" />
 
 <br>
 
