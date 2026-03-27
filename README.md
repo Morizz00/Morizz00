@@ -3,12 +3,12 @@
 <div align="center">
 
 <pre>
-███╗   ███╗ ██████╗ ██╗██████╗ 
+███╗   ███╗ ██████╗ ██╗██████╗ 
 ████╗ ████║██╔═══██╗██║██╔══██╗
-██╔████╔██║██║   ██║██║██║  ██║
-██║╚██╔╝██║██║   ██║██║██║  ██║
+██╔████╔██║██║   ██║██║██║  ██║
+██║╚██╔╝██║██║   ██║██║██║  ██║
 ██║ ╚═╝ ██║╚██████╔╝██║██████╔╝
-╚═╝     ╚═╝ ╚═════╝ ╚═╝╚═════╝ 
+╚═╝     ╚═╝ ╚═════╝ ╚═╝╚═════╝ 
 </pre>
 
 <h3>Backend Architect &nbsp;•&nbsp; AI Systems Engineer &nbsp;•&nbsp; Startup Founder</h3>
@@ -18,7 +18,7 @@
 <div align="center">
 
 ```
- ░▒▓█  AI SYSTEMS + BACKEND ARCHITECTURE + DISTRIBUTED INFRA  █▓▒░
+ ░▒▓█  AI SYSTEMS + BACKEND ARCHITECTURE + DISTRIBUTED INFRA  █▓▒░
 ```
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&duration=2500&pause=600&color=58A6FF&center=true&vCenter=true&width=680&lines=Building+AI-native+infrastructure+from+scratch...;CEO+%2F+CTO+%40+RoundtableCI;Routing+intelligence+%E2%80%94+not+just+requests.;PostgreSQL+%2B+pgvector+%2B+LangChain+%2B+Go+%2B+Rust;Distributed+systems.+Bleeding+edge.+Production+grade." alt="Typing SVG" />
@@ -33,27 +33,27 @@
 
 ```ts
 const moid = {
-  role        : ["CEO", "CTO", "Backend Engineer"],
-  company     : "RoundtableCI",
-  building    : "Neutral AI orchestration — routes queries to the best model based on real performance data",
-  stack       : ["Go", "Rust", "Python", "TypeScript", "PostgreSQL", "pgvector", "LangChain", "Kafka"],
-  domains     : ["AI Systems", "Backend Architecture", "Distributed Infra", "RAG Pipelines", "Vector DBs"],
-  currently   : "Y Combinator S26 applicant 🚀",
-  based_in    : "Hyderabad, India",
-  education   : "B.E. Computer Science",
-  philosophy  : "Ship fast. Build deep. Don't fake benchmarks.",
+  role        : ["CEO", "CTO", "Backend Engineer"],
+  company     : "RoundtableCI",
+  building    : "Neutral AI orchestration — routes queries to the best model based on real performance data",
+  stack       : ["Go", "Rust", "Python", "TypeScript", "PostgreSQL", "pgvector", "LangChain", "Kafka"],
+  domains     : ["AI Systems", "Backend Architecture", "Distributed Infra", "RAG Pipelines", "Vector DBs"],
+  currently   : "Y Combinator S26 applicant 🚀",
+  based_in    : "Hyderabad, India",
+  education   : "B.E. Computer Science",
+  philosophy  : "Ship fast. Build deep. Don't fake benchmarks.",
 };
 ```
 
 ---
 
-## 🚀 What I'm Building
+## What I'm Building
 
 <table>
 <tr>
 <td width="50%">
 
-### 🔁 RoundtableCI
+### RoundtableCI
 **Neutral AI Orchestration Platform**
 
 [![Status](https://img.shields.io/badge/Status-In%20Development-58a6ff?style=flat-square)](https://github.com/Morizz00)
@@ -62,7 +62,7 @@ const moid = {
 </td>
 <td width="50%">
 
-### 📚 PrepHelp
+### PrepHelp
 **AI Study Platform — Osmania University**
 https://www.prephelp.in/
 
@@ -81,7 +81,7 @@ The origin story behind RoundtableCI. Discovered the benchmark problem while bui
 
 ---
 
-## 📊 Profile Metrics
+## Profile Metrics
 
 <div align="center">
 
@@ -104,43 +104,30 @@ The origin story behind RoundtableCI. Discovered the benchmark problem while bui
 
 ---
 
-## 🧩 Competitive Programming
+## Competitive Programming
 
 <!-- LEETCODE-MAIN:START -->
-### 🧩 LeetCode — Main [`Mozzy_11`](https://leetcode.com/Mozzy_11/)
-
-![Solved](https://img.shields.io/badge/Solved-331-FFA116?style=flat-square&logo=leetcode) ![Easy](https://img.shields.io/badge/Easy-148-00b8a3?style=flat-square) ![Medium](https://img.shields.io/badge/Medium-147-ffa116?style=flat-square) ![Hard](https://img.shields.io/badge/Hard-36-ef4743?style=flat-square) ![Rank](https://img.shields.io/badge/Rank-#383,266-6c757d?style=flat-square)
-
 <!-- LEETCODE-MAIN:END -->
 
 <!-- LEETCODE-CONTESTS:START -->
-### 🧩 LeetCode — Contests [`TheSmurfAndor`](https://leetcode.com/TheSmurfAndor/)
-
-![Solved](https://img.shields.io/badge/Solved-494-EF4743?style=flat-square&logo=leetcode) ![Easy](https://img.shields.io/badge/Easy-345-00b8a3?style=flat-square) ![Medium](https://img.shields.io/badge/Medium-132-ffa116?style=flat-square) ![Hard](https://img.shields.io/badge/Hard-17-ef4743?style=flat-square) ![Rank](https://img.shields.io/badge/Rank-#189,105-6c757d?style=flat-square)
-
 <!-- LEETCODE-CONTESTS:END -->
 
-<div align="center">
-
-[![TensorTonic](https://img.shields.io/badge/TensorTonic-feapoflaith-FF6B35?style=flat-square&logo=pytorch&logoColor=white)](https://tensortonic.com/profile/feapoflaith)
-
-</div>
 
 ---
 
-## 🐍 Contribution Grid
+## Contribution Grid
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Morizz00/Morizz00/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Morizz00/Morizz00/output/github-contribution-grid-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/Morizz00/Morizz00/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Morizz00/Morizz00/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Morizz00/Morizz00/output/github-contribution-grid-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/Morizz00/Morizz00/output/github-contribution-grid-snake-dark.svg" />
 </picture>
 </div>
 
 ---
 
-## ⚙️ Core Stack
+## Core Stack
 
 ### Languages
 
@@ -265,7 +252,7 @@ The origin story behind RoundtableCI. Discovered the benchmark problem while bui
 
 ---
 
-## 🗺️ Architecture Blueprint
+## Architecture Blueprint
 
 | Layer | Technologies |
 |---|---|
@@ -295,15 +282,15 @@ The origin story behind RoundtableCI. Discovered the benchmark problem while bui
 
 ---
 
-## 🎯 Focus Areas
+## Focus Areas
 
 ```
-  ▸  Production-grade RAG systems & vector retrieval pipelines
-  ▸  High-concurrency backend design (Go + Rust)
-  ▸  AI orchestration & multi-model evaluation infrastructure
-  ▸  Distributed systems architecture at startup scale
-  ▸  Voice AI infrastructure & real-time audio processing
-  ▸  LLM-native backend systems (not wrappers — actual infra)
+  ▸  Production-grade RAG systems & vector retrieval pipelines
+  ▸  High-concurrency backend design (Go + Rust)
+  ▸  AI orchestration & multi-model evaluation infrastructure
+  ▸  Distributed systems architecture at startup scale
+  ▸  Voice AI infrastructure & real-time audio processing
+  ▸  LLM-native backend systems (not wrappers — actual infra)
 ```
 
 ---
@@ -323,4 +310,3 @@ The origin story behind RoundtableCI. Discovered the benchmark problem while bui
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:24283d,100:414868&height=120&section=footer&fontColor=58a6ff&animation=twinkling"/>
 </div>
----------remove emojis and resend in your code editor as markdown
