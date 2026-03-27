@@ -104,6 +104,22 @@ The origin story behind RoundtableCI. Discovered the benchmark problem while bui
 
 ---
 
+## 🧩 Competitive Programming
+
+<!-- LEETCODE-MAIN:START -->
+<!-- LEETCODE-MAIN:END -->
+
+<!-- LEETCODE-CONTESTS:START -->
+<!-- LEETCODE-CONTESTS:END -->
+
+<div align="center">
+
+[![TensorTonic](https://img.shields.io/badge/TensorTonic-feapoflaith-FF6B35?style=flat-square&logo=pytorch&logoColor=white)](https://tensortonic.com/profile/feapoflaith)
+
+</div>
+
+---
+
 ## 🐍 Contribution Grid
 
 <div align="center">
