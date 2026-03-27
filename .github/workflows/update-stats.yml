@@ -30,8 +30,12 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
-        run: pip install requests
+      - name: Install system and python dependencies
+        run: |
+          sudo apt-get update -qq
+          # Install the renamed alsa library for Ubuntu 24.04 compatibility
+          sudo apt-get install -y libasound2t64
+          pip install requests
 
       - name: Run stats scraper + card generator
         run: python scripts/update_readme.py
