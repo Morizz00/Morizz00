@@ -1,199 +1,129 @@
 #!/usr/bin/env python3
 """
 update_readme.py
-Scrapes LeetCode stats for two accounts and updates README.md markers.
-Run by GitHub Actions on a schedule.
+Fetches LeetCode stats, generates SVG cards, updates README markers.
 """
 
-import re
-import sys
-import json
-import requests
+import re, sys, requests
+import generate_cards as cards
 
-# ── Config ────────────────────────────────────────────────────────────────────
 ACCOUNTS = {
     "MAIN":     "Mozzy_11",
     "CONTESTS": "TheSmurfAndor",
 }
-TENSORTONIC_URL  = "https://tensortonic.com/profile/feapoflaith"
-README_PATH      = "README.md"
-LEETCODE_GQL     = "https://leetcode.com/graphql"
+README_PATH  = "README.md"
+LEETCODE_GQL = "https://leetcode.com/graphql"
+RAW_BASE     = "https://raw.githubusercontent.com/Morizz00/Morizz00/main/assets/cards"
 
 HEADERS = {
     "Content-Type": "application/json",
-    "Referer":       "https://leetcode.com",
-    "User-Agent":    "Mozilla/5.0",
+    "Referer":      "https://leetcode.com",
+    "User-Agent":   "Mozilla/5.0",
 }
 
-# ── GraphQL query ─────────────────────────────────────────────────────────────
-QUERY = """
+PROFILE_QUERY = """
 query getUserProfile($username: String!) {
   matchedUser(username: $username) {
     username
-    profile {
-      ranking
-    }
-    submitStats {
-      acSubmissionNum {
-        difficulty
-        count
-        submissions
-      }
-    }
-    badges {
-      name
-    }
+    submitStats { acSubmissionNum { difficulty count } }
   }
 }
 """
 
-# ── Helpers ───────────────────────────────────────────────────────────────────
-def fetch_leetcode(username: str) -> dict:
-    resp = requests.post(
-        LEETCODE_GQL,
-        json={"query": QUERY, "variables": {"username": username}},
-        headers=HEADERS,
-        timeout=15,
-    )
-    resp.raise_for_status()
-    data = resp.json()
-    user = data["data"]["matchedUser"]
+CONTEST_QUERY = """
+query getUserContestRanking($username: String!) {
+  userContestRanking(username: $username) {
+    attendedContestsCount
+    rating
+    globalRanking
+    topPercentage
+  }
+}
+"""
+
+def gql(query, variables):
+    r = requests.post(LEETCODE_GQL, json={"query": query, "variables": variables},
+                      headers=HEADERS, timeout=15)
+    r.raise_for_status()
+    return r.json()
+
+def fetch_main(username):
+    data  = gql(PROFILE_QUERY, {"username": username})
+    user  = data["data"]["matchedUser"]
     stats = {s["difficulty"]: s for s in user["submitStats"]["acSubmissionNum"]}
     return {
         "username": user["username"],
-        "ranking":  user["profile"]["ranking"],
-        "total":    stats.get("All",  {}).get("count", 0),
-        "easy":     stats.get("Easy", {}).get("count", 0),
+        "total":    stats.get("All",    {}).get("count", 0),
+        "easy":     stats.get("Easy",   {}).get("count", 0),
         "medium":   stats.get("Medium", {}).get("count", 0),
-        "hard":     stats.get("Hard", {}).get("count", 0),
-        "badges":   len(user.get("badges", [])),
+        "hard":     stats.get("Hard",   {}).get("count", 0),
     }
 
-def badge(label: str, message: str, color: str, logo: str = "") -> str:
-    label_enc   = label.replace("-", "--").replace("_", "__").replace(" ", "_")
-    message_enc = str(message).replace("-", "--").replace("_", "__").replace(" ", "_")
-    logo_part   = f"&logo={logo}" if logo else ""
+def fetch_contests(username):
+    p  = gql(PROFILE_QUERY,  {"username": username})
+    c  = gql(CONTEST_QUERY,  {"username": username})
+    user  = p["data"]["matchedUser"]
+    stats = {s["difficulty"]: s for s in user["submitStats"]["acSubmissionNum"]}
+    cr    = c["data"].get("userContestRanking") or {}
+    return {
+        "username":       user["username"],
+        "total":          stats.get("All",    {}).get("count", 0),
+        "easy":           stats.get("Easy",   {}).get("count", 0),
+        "medium":         stats.get("Medium", {}).get("count", 0),
+        "hard":           stats.get("Hard",   {}).get("count", 0),
+        "rating":         int(cr.get("rating") or 0),
+        "global_rank":    cr.get("globalRanking") or 0,
+        "top_pct":        round(float(cr.get("topPercentage") or 0), 1),
+        "contests_count": cr.get("attendedContestsCount") or 0,
+    }
+
+def img_block(svg_file, link, alt):
     return (
-        f"![{label}](https://img.shields.io/badge/"
-        f"{label_enc}-{message_enc}-{color}?style=flat-square{logo_part})"
+        f'<div align="center">\n'
+        f'  <a href="{link}">\n'
+        f'    <img src="{RAW_BASE}/{svg_file}" alt="{alt}" />\n'
+        f'  </a>\n'
+        f'</div>\n'
     )
 
-def leet_block(data: dict, label: str, color: str) -> str:
-    profile_url = f"https://leetcode.com/{data['username']}/"
-    rank_str = "#{:,}".format(data['ranking'])
-    lines = [
-        f"### 🧩 LeetCode — {label} [`{data['username']}`]({profile_url})",
-        "",
-        f"{badge('Solved', data['total'], color, 'leetcode')} "
-        f"{badge('Easy', data['easy'], '00b8a3')} "
-        f"{badge('Medium', data['medium'], 'ffa116')} "
-        f"{badge('Hard', data['hard'], 'ef4743')} "
-        f"{badge('Rank', rank_str, '6c757d')}",
-        "",
-    ]
-    return "\n".join(lines)
+def replace_section(content, marker, body):
+    pat = rf"(<!-- {marker}:START -->).*?(<!-- {marker}:END -->)"
+    return re.sub(pat, rf"\1\n{body}\n\2", content, flags=re.DOTALL)
 
-def fetch_tensortonic() -> dict:
-    """Run the Node.js Puppeteer scraper and return parsed JSON."""
-    import subprocess, shutil, os
-    if not shutil.which("node"):
-        return {"error": "node not found"}
-    script = os.path.join(os.path.dirname(os.path.abspath(__file__)), "scrape_tensortonic.js")
-    if not os.path.exists(script):
-        return {"error": f"scraper not found at {script}"}
-    result = subprocess.run(
-        ["node", script],
-        capture_output=True, text=True, timeout=60
-    )
-    try:
-        return json.loads(result.stdout)
-    except Exception:
-        return {"error": result.stderr or "parse error"}
-
-def tensortonic_block(data: dict = None) -> str:
-    url = TENSORTONIC_URL
-    if not data or data.get("error"):
-        # Fallback: static badge only
-        return (
-            "### 🤖 TensorTonic\n\n"
-            f"[![TensorTonic](https://img.shields.io/badge/TensorTonic-feapoflaith-FF6B35?"
-            f"style=flat-square&logo=pytorch&logoColor=white)]({url})\n"
-        )
-
-    solved = data.get("problemsSolved", 0)
-    easy   = data.get("easy",   0)
-    medium = data.get("medium", 0)
-    hard   = data.get("hard",   0)
-    subs   = data.get("totalSubmissions", 0)
-    streak = data.get("currentStreak", 0)
-    ms     = data.get("maxStreak", 0)
-    mile   = data.get("milestone") or "—"
-
-    lines = [
-        f"### 🤖 TensorTonic — [`feapoflaith`]({url})",
-        "",
-        f"{badge('Solved', solved, 'FF6B35', 'pytorch')} "
-        f"{badge('Easy', easy, '00b8a3')} "
-        f"{badge('Medium', medium, 'ffa116')} "
-        f"{badge('Hard', hard, 'ef4743')}",
-        "",
-        f"{badge('Submissions', subs, '6c757d')} "
-        f"{badge('Streak', streak, '58a6ff')} "
-        f"{badge('Max_Streak', ms, '58a6ff')} "
-        f"{badge('Milestone', mile.replace(' ', '_'), 'cd7f32')}",
-        "",
-    ]
-    return "\n".join(lines)
-
-def replace_section(content: str, marker: str, new_body: str) -> str:
-    pattern = rf"(<!-- {marker}:START -->).*?(<!-- {marker}:END -->)"
-    replacement = rf"\1\n{new_body}\n\2"
-    return re.sub(pattern, replacement, content, flags=re.DOTALL)
-
-# ── Main ──────────────────────────────────────────────────────────────────────
 def main():
     with open(README_PATH, "r", encoding="utf-8") as f:
         content = f.read()
 
     errors = []
 
-    # LeetCode — Main
+    # LeetCode Main
     try:
-        main_data = fetch_leetcode(ACCOUNTS["MAIN"])
-        block = leet_block(main_data, "Main", "FFA116")
-        content = replace_section(content, "LEETCODE-MAIN", block)
-        print(f"✅ Fetched Main ({ACCOUNTS['MAIN']}): {main_data['total']} solved")
+        d = fetch_main(ACCOUNTS["MAIN"])
+        cards.write_main(d)
+        content = replace_section(content, "LEETCODE-MAIN",
+            img_block("lc_main.svg", f"https://leetcode.com/{d['username']}/", "LeetCode Main"))
+        print(f"✅ Main ({d['username']}): {d['total']} solved")
     except Exception as e:
-        errors.append(f"Main LeetCode: {e}")
-        print(f"❌ Main LeetCode failed: {e}", file=sys.stderr)
+        errors.append(str(e))
+        print(f"❌ Main failed: {e}", file=sys.stderr)
 
-    # LeetCode — Contests
+    # LeetCode Contests
     try:
-        contest_data = fetch_leetcode(ACCOUNTS["CONTESTS"])
-        block = leet_block(contest_data, "Contests", "EF4743")
-        content = replace_section(content, "LEETCODE-CONTESTS", block)
-        print(f"✅ Fetched Contests ({ACCOUNTS['CONTESTS']}): {contest_data['total']} solved")
+        d = fetch_contests(ACCOUNTS["CONTESTS"])
+        cards.write_contests(d)
+        content = replace_section(content, "LEETCODE-CONTESTS",
+            img_block("lc_contests.svg", f"https://leetcode.com/{d['username']}/", "LeetCode Contests"))
+        print(f"✅ Contests ({d['username']}): {d['total']} solved, rating {d['rating']}")
     except Exception as e:
-        errors.append(f"Contests LeetCode: {e}")
-        print(f"❌ Contests LeetCode failed: {e}", file=sys.stderr)
-
-    # TensorTonic — Puppeteer scrape (soft failure — falls back to static badge)
-    try:
-        tt_data = fetch_tensortonic()
-        if tt_data.get("error"):
-            raise RuntimeError(tt_data["error"])
-        content = replace_section(content, "TENSORTONIC", tensortonic_block(tt_data))
-        print(f"✅ TensorTonic scraped: {tt_data.get('problemsSolved', '?')} solved")
-    except Exception as e:
-        print(f"⚠️  TensorTonic failed ({e}) — using static badge fallback", file=sys.stderr)
-        content = replace_section(content, "TENSORTONIC", tensortonic_block())
+        errors.append(str(e))
+        print(f"❌ Contests failed: {e}", file=sys.stderr)
 
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(content)
-    print("📝 README.md written successfully")
+    print("📝 README.md written")
 
     if errors:
-        print(f"\n⚠️  {len(errors)} error(s) occurred — partial update written")
+        print(f"\n⚠️  {len(errors)} error(s)")
         sys.exit(1)
 
 if __name__ == "__main__":
