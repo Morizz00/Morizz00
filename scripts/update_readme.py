@@ -95,11 +95,14 @@ def leet_block(data: dict, label: str, color: str) -> str:
 
 def fetch_tensortonic() -> dict:
     """Run the Node.js Puppeteer scraper and return parsed JSON."""
-    import subprocess, shutil
+    import subprocess, shutil, os
     if not shutil.which("node"):
         return {"error": "node not found"}
+    script = os.path.join(os.path.dirname(os.path.abspath(__file__)), "scrape_tensortonic.js")
+    if not os.path.exists(script):
+        return {"error": f"scraper not found at {script}"}
     result = subprocess.run(
-        ["node", "scripts/scrape_tensortonic.js"],
+        ["node", script],
         capture_output=True, text=True, timeout=60
     )
     try:
@@ -174,7 +177,7 @@ def main():
         errors.append(f"Contests LeetCode: {e}")
         print(f"❌ Contests LeetCode failed: {e}", file=sys.stderr)
 
-    # TensorTonic — Puppeteer scrape
+    # TensorTonic — Puppeteer scrape (soft failure — falls back to static badge)
     try:
         tt_data = fetch_tensortonic()
         if tt_data.get("error"):
@@ -182,7 +185,6 @@ def main():
         content = replace_section(content, "TENSORTONIC", tensortonic_block(tt_data))
         print(f"✅ TensorTonic scraped: {tt_data.get('problemsSolved', '?')} solved")
     except Exception as e:
-        errors.append(f"TensorTonic: {e}")
         print(f"⚠️  TensorTonic failed ({e}) — using static badge fallback", file=sys.stderr)
         content = replace_section(content, "TENSORTONIC", tensortonic_block())
 
