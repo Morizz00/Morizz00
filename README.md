@@ -107,9 +107,17 @@ The origin story behind RoundtableCI. Discovered the benchmark problem while bui
 ## 🧩 Competitive Programming
 
 <!-- LEETCODE-MAIN:START -->
+### 🧩 LeetCode — Main [`Mozzy_11`](https://leetcode.com/Mozzy_11/)
+
+![Solved](https://img.shields.io/badge/Solved-331-FFA116?style=flat-square&logo=leetcode) ![Easy](https://img.shields.io/badge/Easy-148-00b8a3?style=flat-square) ![Medium](https://img.shields.io/badge/Medium-147-ffa116?style=flat-square) ![Hard](https://img.shields.io/badge/Hard-36-ef4743?style=flat-square) ![Rank](https://img.shields.io/badge/Rank-#383,266-6c757d?style=flat-square)
+
 <!-- LEETCODE-MAIN:END -->
 
 <!-- LEETCODE-CONTESTS:START -->
+### 🧩 LeetCode — Contests [`TheSmurfAndor`](https://leetcode.com/TheSmurfAndor/)
+
+![Solved](https://img.shields.io/badge/Solved-494-EF4743?style=flat-square&logo=leetcode) ![Easy](https://img.shields.io/badge/Easy-345-00b8a3?style=flat-square) ![Medium](https://img.shields.io/badge/Medium-132-ffa116?style=flat-square) ![Hard](https://img.shields.io/badge/Hard-17-ef4743?style=flat-square) ![Rank](https://img.shields.io/badge/Rank-#189,105-6c757d?style=flat-square)
+
 <!-- LEETCODE-CONTESTS:END -->
 
 <div align="center">
