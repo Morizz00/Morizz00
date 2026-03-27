@@ -38,7 +38,7 @@ const moid = {
   building    : "Neutral AI orchestration — routes queries to the best model based on real performance data",
   stack       : ["Go", "Rust", "Python", "TypeScript", "PostgreSQL", "pgvector", "LangChain", "Kafka"],
   domains     : ["AI Systems", "Backend Architecture", "Distributed Infra", "RAG Pipelines", "Vector DBs"],
-  currently   : "Y Combinator S26 applicant 🚀",
+  currently   : "Y Combinator W'25 and S26 applicant",
   based_in    : "Hyderabad, India",
   education   : "B.E. Computer Science",
   philosophy  : "Ship fast. Build deep. Don't fake benchmarks.",
