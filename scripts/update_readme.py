@@ -80,6 +80,7 @@ def badge(label: str, message: str, color: str, logo: str = "") -> str:
 
 def leet_block(data: dict, label: str, color: str) -> str:
     profile_url = f"https://leetcode.com/{data['username']}/"
+    rank_str = "#{:,}".format(data['ranking'])
     lines = [
         f"### 🧩 LeetCode — {label} [`{data['username']}`]({profile_url})",
         "",
@@ -87,17 +88,59 @@ def leet_block(data: dict, label: str, color: str) -> str:
         f"{badge('Easy', data['easy'], '00b8a3')} "
         f"{badge('Medium', data['medium'], 'ffa116')} "
         f"{badge('Hard', data['hard'], 'ef4743')} "
-        f"{badge('Rank', f\"#{data['ranking']:,}\", '6c757d')}",
+        f"{badge('Rank', rank_str, '6c757d')}",
         "",
     ]
     return "\n".join(lines)
 
-def tensortonic_block() -> str:
-    return (
-        "### 🤖 TensorTonic\n\n"
-        f"[![TensorTonic](https://img.shields.io/badge/TensorTonic-feapoflaith-FF6B35?"
-        f"style=flat-square&logo=pytorch&logoColor=white)]({TENSORTONIC_URL})\n"
+def fetch_tensortonic() -> dict:
+    """Run the Node.js Puppeteer scraper and return parsed JSON."""
+    import subprocess, shutil
+    if not shutil.which("node"):
+        return {"error": "node not found"}
+    result = subprocess.run(
+        ["node", "scripts/scrape_tensortonic.js"],
+        capture_output=True, text=True, timeout=60
     )
+    try:
+        return json.loads(result.stdout)
+    except Exception:
+        return {"error": result.stderr or "parse error"}
+
+def tensortonic_block(data: dict = None) -> str:
+    url = TENSORTONIC_URL
+    if not data or data.get("error"):
+        # Fallback: static badge only
+        return (
+            "### 🤖 TensorTonic\n\n"
+            f"[![TensorTonic](https://img.shields.io/badge/TensorTonic-feapoflaith-FF6B35?"
+            f"style=flat-square&logo=pytorch&logoColor=white)]({url})\n"
+        )
+
+    solved = data.get("problemsSolved", 0)
+    easy   = data.get("easy",   0)
+    medium = data.get("medium", 0)
+    hard   = data.get("hard",   0)
+    subs   = data.get("totalSubmissions", 0)
+    streak = data.get("currentStreak", 0)
+    ms     = data.get("maxStreak", 0)
+    mile   = data.get("milestone") or "—"
+
+    lines = [
+        f"### 🤖 TensorTonic — [`feapoflaith`]({url})",
+        "",
+        f"{badge('Solved', solved, 'FF6B35', 'pytorch')} "
+        f"{badge('Easy', easy, '00b8a3')} "
+        f"{badge('Medium', medium, 'ffa116')} "
+        f"{badge('Hard', hard, 'ef4743')}",
+        "",
+        f"{badge('Submissions', subs, '6c757d')} "
+        f"{badge('Streak', streak, '58a6ff')} "
+        f"{badge('Max_Streak', ms, '58a6ff')} "
+        f"{badge('Milestone', mile.replace(' ', '_'), 'cd7f32')}",
+        "",
+    ]
+    return "\n".join(lines)
 
 def replace_section(content: str, marker: str, new_body: str) -> str:
     pattern = rf"(<!-- {marker}:START -->).*?(<!-- {marker}:END -->)"
@@ -131,9 +174,17 @@ def main():
         errors.append(f"Contests LeetCode: {e}")
         print(f"❌ Contests LeetCode failed: {e}", file=sys.stderr)
 
-    # TensorTonic (static badge — no public API)
-    content = replace_section(content, "TENSORTONIC", tensortonic_block())
-    print("✅ TensorTonic block updated")
+    # TensorTonic — Puppeteer scrape
+    try:
+        tt_data = fetch_tensortonic()
+        if tt_data.get("error"):
+            raise RuntimeError(tt_data["error"])
+        content = replace_section(content, "TENSORTONIC", tensortonic_block(tt_data))
+        print(f"✅ TensorTonic scraped: {tt_data.get('problemsSolved', '?')} solved")
+    except Exception as e:
+        errors.append(f"TensorTonic: {e}")
+        print(f"⚠️  TensorTonic failed ({e}) — using static badge fallback", file=sys.stderr)
+        content = replace_section(content, "TENSORTONIC", tensortonic_block())
 
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(content)
