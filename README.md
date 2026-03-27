@@ -266,32 +266,79 @@ The origin story behind RoundtableCI. Discovered the benchmark problem while bui
 
 ## Architecture Blueprint
 
-| Layer | Technologies |
-|---|---|
-| **Backend APIs** | Go |
-| **Systems Programming** | Rust + C |
-| **AI Orchestration** | Python + LangChain + pgvector |
-| **ML / Training** | Python + TensorFlow + PyTorch |
-| **JVM** | Java + Scala |
-| **Scripting** | Ruby + Bash |
-| **Frontend** | React + TypeScript + Next.js + Tailwind |
-| **JS Runtime** | Node.js + Bun |
-| **Databases** | PostgreSQL + MongoDB + Redis |
-| **Vector Retrieval** | pgvector + Pinecone + Weaviate + FAISS |
-| **Messaging** | Kafka + RabbitMQ |
-| **Containers** | Docker |
-| **Orchestration** | Kubernetes + Helm + ArgoCD |
-| **Service Mesh** | Istio + Consul |
-| **IaC** | Terraform + Ansible |
-| **Observability** | Prometheus + Grafana + Datadog |
-| **Secrets** | Vault |
-| **Proxy / Gateway** | Nginx |
-| **Cloud** | AWS + Azure + GCP |
-| **CI/CD** | GitHub Actions + GitLab CI + Jenkins |
-| **Deployment** | Railway + Vercel |
-| **AI Integrations** | Claude + GPT-4o + Gemini + Whisper |
-| **OS** | Linux |
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
 
+<h4>Core Engine</h4>
+
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
+
+</td>
+<td width="50%" valign="top">
+
+<h4>AI & Intelligence</h4>
+
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21F?style=for-the-badge&logo=huggingface&logoColor=black)
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<h4>Persistent Layer</h4>
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![pgvector](https://img.shields.io/badge/pgvector-336791?style=for-the-badge)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+
+</td>
+<td width="50%" valign="top">
+
+<h4>Message Fabric</h4>
+
+![Kafka](https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
+![Consul](https://img.shields.io/badge/Consul-F24C53?style=for-the-badge&logo=consul&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<h4>Cloud & Infra (IaC)</h4>
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
+![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white)
+
+</td>
+<td width="50%" valign="top">
+
+<h4>Ops & Observability</h4>
+
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![Datadog](https://img.shields.io/badge/Datadog-632CA6?style=for-the-badge&logo=datadog&logoColor=white)
+![Vault](https://img.shields.io/badge/Vault-FFEC6E?style=for-the-badge&logo=vault&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
+</td>
+</tr>
+</table>
 ---
 
 ## Focus Areas
