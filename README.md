@@ -109,7 +109,7 @@ The origin story behind RoundtableCI. Discovered the benchmark problem while bui
 <!-- LEETCODE-MAIN:START -->
 <div align="center">
   <a href="https://leetcode.com/Mozzy_11/">
-    <img src="https://raw.githubusercontent.com/Morizz00/Morizz00/main/assets/cards/lc_main.svg" alt="LeetCode Main" />
+    <img src="assets/cards/lc_main.svg" alt="LeetCode Main" />
   </a>
 </div>
 
@@ -118,7 +118,7 @@ The origin story behind RoundtableCI. Discovered the benchmark problem while bui
 <!-- LEETCODE-CONTESTS:START -->
 <div align="center">
   <a href="https://leetcode.com/TheSmurfAndor/">
-    <img src="https://raw.githubusercontent.com/Morizz00/Morizz00/main/assets/cards/lc_contests.svg" alt="LeetCode Contests" />
+    <img src="assets/cards/lc_contests.svg" alt="LeetCode Contests" />
   </a>
 </div>
 
