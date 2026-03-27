@@ -13,7 +13,7 @@ ACCOUNTS = {
 }
 README_PATH  = "README.md"
 LEETCODE_GQL = "https://leetcode.com/graphql"
-RAW_BASE     = "https://raw.githubusercontent.com/Morizz00/Morizz00/main/assets/cards"
+RAW_BASE = "assets/cards"
 
 HEADERS = {
     "Content-Type": "application/json",
