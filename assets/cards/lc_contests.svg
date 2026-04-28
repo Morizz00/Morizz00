@@ -8,11 +8,11 @@
 <text x="477" y="24" font-size="11" fill="#ffa116" font-weight="600" text-anchor="end" class="mono">@TheSmurfAndor</text>
 <line x1="0" y1="38" x2="495" y2="38" stroke="#2d2d2d"/>
 <circle cx="82" cy="112" r="54" fill="none" stroke="#2d2d2d" stroke-width="10"/><circle cx="82" cy="112" r="54" fill="none" stroke="#00b8a3" stroke-width="10" stroke-dasharray="134.36 204.93" stroke-linecap="round" transform="rotate(-90 82 112)"/>
-<circle cx="82" cy="112" r="40" fill="none" stroke="#2d2d2d" stroke-width="4"/><circle cx="82" cy="112" r="40" fill="none" stroke="#ef4743" stroke-width="4" stroke-dasharray="8.57 242.76" stroke-linecap="round" transform="rotate(-90 82 112)"/>
+<circle cx="82" cy="112" r="40" fill="none" stroke="#2d2d2d" stroke-width="4"/><circle cx="82" cy="112" r="40" fill="none" stroke="#ef4743" stroke-width="4" stroke-dasharray="8.55 242.78" stroke-linecap="round" transform="rotate(-90 82 112)"/>
 <text x="82" y="105" text-anchor="middle" font-size="19" font-weight="700" fill="#ffffff" class="mono">1584</text>
 <text x="82" y="124" text-anchor="middle" font-size="9" fill="#808080" letter-spacing="1" class="mono">RATING</text>
-<text x="168" y="51" font-size="10" fill="#808080" class="mono">Easy</text><rect x="168" y="56" width="230" height="8" rx="4" fill="#2d2d2d"/><rect x="168" y="56" width="155.5" height="8" rx="4" fill="#00b8a3"/><text x="406" y="64" font-size="10" fill="#ffffff" font-weight="600" class="mono">357</text>
-<text x="168" y="89" font-size="10" fill="#808080" class="mono">Medium</text><rect x="168" y="94" width="230" height="8" rx="4" fill="#2d2d2d"/><rect x="168" y="94" width="66.6" height="8" rx="4" fill="#ffa116"/><text x="406" y="102" font-size="10" fill="#ffffff" font-weight="600" class="mono">153</text>
+<text x="168" y="51" font-size="10" fill="#808080" class="mono">Easy</text><rect x="168" y="56" width="230" height="8" rx="4" fill="#2d2d2d"/><rect x="168" y="56" width="155.2" height="8" rx="4" fill="#00b8a3"/><text x="406" y="64" font-size="10" fill="#ffffff" font-weight="600" class="mono">357</text>
+<text x="168" y="89" font-size="10" fill="#808080" class="mono">Medium</text><rect x="168" y="94" width="230" height="8" rx="4" fill="#2d2d2d"/><rect x="168" y="94" width="67.0" height="8" rx="4" fill="#ffa116"/><text x="406" y="102" font-size="10" fill="#ffffff" font-weight="600" class="mono">154</text>
 <text x="168" y="127" font-size="10" fill="#808080" class="mono">Hard</text><rect x="168" y="132" width="230" height="8" rx="4" fill="#2d2d2d"/><rect x="168" y="132" width="7.8" height="8" rx="4" fill="#ef4743"/><text x="406" y="140" font-size="10" fill="#ffffff" font-weight="600" class="mono">18</text>
 <rect x="12" y="163" width="471" height="26" rx="6" fill="#161b22"/>
 <text x="84" y="174" text-anchor="middle" font-size="11" font-weight="700" fill="#ffa116" class="mono">#221,302</text>
@@ -21,7 +21,7 @@
 <text x="198" y="186" text-anchor="middle" font-size="9" fill="#808080" class="mono">Percentile</text>
 <text x="312" y="174" text-anchor="middle" font-size="11" font-weight="700" fill="#ffa116" class="mono">10</text>
 <text x="312" y="186" text-anchor="middle" font-size="9" fill="#808080" class="mono">Contests</text>
-<text x="416" y="174" text-anchor="middle" font-size="11" font-weight="700" fill="#ffa116" class="mono">528</text>
+<text x="416" y="174" text-anchor="middle" font-size="11" font-weight="700" fill="#ffa116" class="mono">529</text>
 <text x="416" y="186" text-anchor="middle" font-size="9" fill="#808080" class="mono">Solved</text>
 <line x1="0" y1="190" x2="495" y2="190" stroke="#2d2d2d"/>
 <text x="18" y="208" font-size="10" fill="#808080" class="mono">leetcode.com/TheSmurfAndor</text>
